@@ -1,0 +1,36 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "Creat";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container" style="margin-top:50px;height:500px;width:500px;">
+    <div class="mt-2">
+        <form class="border border- p-2 border-opacity-25" method="post">
+            <header>
+                <h2>Kategori Oluşturma</h2>
+            </header>
+            <body>
+
+
+                <div class="mb-3">
+                    <label class="form-label">Kategori Adı</label>
+                    <input type="text" style="background-color:#EDF1D6" class="form-control" placeholder="Kategori Adı" asp-for="CategoryName">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Description</label>
+                    <input type="text" style="background-color:#EDF1D6" class="form-control" placeholder="Açıklama" asp-for="Description">
+                </div>
+                
+                <div class="d-flex">
+
+                    <button type="submit" class="btn btn-primary">Oluştur</button>
+                </div>
+
+
+            </body>
+
+        </form>
+    </div>
+</div>
+
